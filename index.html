@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign up form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +15,37 @@
         <div class="credit">Photo by <a class="image-anchor" href="https://unsplash.com/@haliewestphoto"> Halie West</a> on <a class="image-anchor" href="https://unsplash.com/"> Unsplash</a></div>
     </div>
     <div class="text-container">
-        text
+        <div class="title-text">
+            This is not an online service or a store so don't click anything here, you can test the input out just on visuals. The inputs don't go anywhere.
+        </div>
+        <form action="">
+            <div class="shadow-container">
+                <div class="logins">
+                    <label for="first">FIRST NAME
+                        <input type="text" id="first" name="first_name">
+                    </label>
+                    <label for="last">LAST NAME
+                        <input type="text" id="last" name="last_name">
+                    </label>
+                    <label for="email">EMAIL
+                        <input type="email" name="email" id="email">
+                    </label>
+                    <label for="phn-nbr">PHONE NUMBER
+                        <input type="tel" name="phone_number" id="phn-nbr">
+                    </label>
+                    <label for="password">PASSWORD
+                        <input type="password" name="password" id="password" required>
+                    </label>
+                    <label for="cnfrm-pass">CONFIRM PASSWORD
+                        <input type="password" name="confirm_password" id="cnfrm-pass" required>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <button type="submit">Create Account</button>
+            </div>
+        </form>
+        <div class="already-loggedin">Already have an account? <a class="log-in" href="">Log in</a></div>
     </div>
 </body>
 </html>
